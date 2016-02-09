@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="n4fpga.bit" key="n4fpga_hw_platform_0-bitFile"/>
+	<item value="Auto Detect" key="n4fpga_hw_platform_0-device"/>
+	<item value="Local" key="n4fpga_hw_platform_0-target"/>
+	<item value="false" key="n4fpga_hw_platform_0-partial_bit"/>
+	<item value="n4fpga_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="/home/chad/vmshare/project/ece544/proj2/proj2.sdk/proj2/Debug/proj2.elf" key="n4fpga_hw_platform_0-EMBSYS/microblaze_0-initElf"/>
+	<item value="n4fpga.mmi" key="n4fpga_hw_platform_0-bmmFile"/>
+</section>
