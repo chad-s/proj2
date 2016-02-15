@@ -76,25 +76,25 @@ system_xbar_0 your_instance_name (
   .s_axi_rresp(s_axi_rresp),      // output wire [1 : 0] s_axi_rresp
   .s_axi_rvalid(s_axi_rvalid),    // output wire [0 : 0] s_axi_rvalid
   .s_axi_rready(s_axi_rready),    // input wire [0 : 0] s_axi_rready
-  .m_axi_awaddr(m_axi_awaddr),    // output wire [191 : 0] m_axi_awaddr
-  .m_axi_awprot(m_axi_awprot),    // output wire [17 : 0] m_axi_awprot
-  .m_axi_awvalid(m_axi_awvalid),  // output wire [5 : 0] m_axi_awvalid
-  .m_axi_awready(m_axi_awready),  // input wire [5 : 0] m_axi_awready
-  .m_axi_wdata(m_axi_wdata),      // output wire [191 : 0] m_axi_wdata
-  .m_axi_wstrb(m_axi_wstrb),      // output wire [23 : 0] m_axi_wstrb
-  .m_axi_wvalid(m_axi_wvalid),    // output wire [5 : 0] m_axi_wvalid
-  .m_axi_wready(m_axi_wready),    // input wire [5 : 0] m_axi_wready
-  .m_axi_bresp(m_axi_bresp),      // input wire [11 : 0] m_axi_bresp
-  .m_axi_bvalid(m_axi_bvalid),    // input wire [5 : 0] m_axi_bvalid
-  .m_axi_bready(m_axi_bready),    // output wire [5 : 0] m_axi_bready
-  .m_axi_araddr(m_axi_araddr),    // output wire [191 : 0] m_axi_araddr
-  .m_axi_arprot(m_axi_arprot),    // output wire [17 : 0] m_axi_arprot
-  .m_axi_arvalid(m_axi_arvalid),  // output wire [5 : 0] m_axi_arvalid
-  .m_axi_arready(m_axi_arready),  // input wire [5 : 0] m_axi_arready
-  .m_axi_rdata(m_axi_rdata),      // input wire [191 : 0] m_axi_rdata
-  .m_axi_rresp(m_axi_rresp),      // input wire [11 : 0] m_axi_rresp
-  .m_axi_rvalid(m_axi_rvalid),    // input wire [5 : 0] m_axi_rvalid
-  .m_axi_rready(m_axi_rready)    // output wire [5 : 0] m_axi_rready
+  .m_axi_awaddr(m_axi_awaddr),    // output wire [223 : 0] m_axi_awaddr
+  .m_axi_awprot(m_axi_awprot),    // output wire [20 : 0] m_axi_awprot
+  .m_axi_awvalid(m_axi_awvalid),  // output wire [6 : 0] m_axi_awvalid
+  .m_axi_awready(m_axi_awready),  // input wire [6 : 0] m_axi_awready
+  .m_axi_wdata(m_axi_wdata),      // output wire [223 : 0] m_axi_wdata
+  .m_axi_wstrb(m_axi_wstrb),      // output wire [27 : 0] m_axi_wstrb
+  .m_axi_wvalid(m_axi_wvalid),    // output wire [6 : 0] m_axi_wvalid
+  .m_axi_wready(m_axi_wready),    // input wire [6 : 0] m_axi_wready
+  .m_axi_bresp(m_axi_bresp),      // input wire [13 : 0] m_axi_bresp
+  .m_axi_bvalid(m_axi_bvalid),    // input wire [6 : 0] m_axi_bvalid
+  .m_axi_bready(m_axi_bready),    // output wire [6 : 0] m_axi_bready
+  .m_axi_araddr(m_axi_araddr),    // output wire [223 : 0] m_axi_araddr
+  .m_axi_arprot(m_axi_arprot),    // output wire [20 : 0] m_axi_arprot
+  .m_axi_arvalid(m_axi_arvalid),  // output wire [6 : 0] m_axi_arvalid
+  .m_axi_arready(m_axi_arready),  // input wire [6 : 0] m_axi_arready
+  .m_axi_rdata(m_axi_rdata),      // input wire [223 : 0] m_axi_rdata
+  .m_axi_rresp(m_axi_rresp),      // input wire [13 : 0] m_axi_rresp
+  .m_axi_rvalid(m_axi_rvalid),    // input wire [6 : 0] m_axi_rvalid
+  .m_axi_rready(m_axi_rready)    // output wire [6 : 0] m_axi_rready
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

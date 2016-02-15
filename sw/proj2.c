@@ -13,6 +13,7 @@
 #include "PMod544IOR2.h"
 #include "pwm_tmrctr.h"
 #include "microblaze_sleep.h"
+#include "tsl235r.h"
 
 #define DUTY_CYCLE_INCREMENTS 5
 #define PWM_FREQ_MSK          0x07
@@ -28,10 +29,18 @@ XGpio    instGPIODebug;           // GPIO instance
 XStatus  init_axi_devices(void);
 void     errorExit(void);
 void     init_welcom(void);
+void     init_feedback_system(void);
 int      getFreqFromSwitches(u16 switches);
 void     update_lcd(int freq, int dutycycle, u32 linenum);
 void     FIT_Handler(void);
 
+/*volatile u32 tsl235rHiTime;*/
+/*volatile u32 tsl235rLoTime;*/
+volatile int tsl235rFreq = 0;
+volatile u32 LEDCounter = 0;
+
+volatile u32 *tsl235rHiTimePort = (u32*) XPAR_TSL235R_0_S00_AXI_BASEADDR;
+volatile u32 *tsl235rLoTimePort = (u32*) XPAR_TSL235R_0_S00_AXI_BASEADDR + 16;
 
 int main () {
    XStatus status;
@@ -43,12 +52,26 @@ int main () {
    u32      PWMFreqGenRead;
    u32      PWMDutyGenRead;
 
+   /*u32      tsl235rHiTimePrev = 0;*/
+   /*int      PWMCycTime;*/
+   /*int      PWMFreqMeas;*/
+
+   int      tsl235rFreqPrev = 0;
+
+
    // Initializations
    init_platform();
    status = init_axi_devices();
    if (status != XST_SUCCESS) errorExit();
    init_welcom();
 
+
+   // SET : PWM generator begin, enable microblaze interrupts
+   /*PWM_SetParams(&instPWMTimer, PWM_FREQ_005KHZ, PWMDutyGen);   */
+   PWM_Start(&instPWMTimer);
+   microblaze_enable_interrupts();
+
+   init_feedback_system();
    
    while(1) {
       PWMGenUpdateFlag = false;
@@ -76,6 +99,19 @@ int main () {
          PWM_GetParams(&instPWMTimer, &PWMFreqGenRead, &PWMDutyGenRead);
          update_lcd(PWMFreqGenRead, PWMDutyGenRead, 1);
          PWM_Start(&instPWMTimer);
+      }
+
+      /*if (tsl235rHiTimePrev != tsl235rHiTime) {*/
+         /*PWMCycTime = (int) tsl235rHiTime * 2;*/
+         /*PWMFreqMeas = 100000000 / PWMCycTime;*/
+         /*update_lcd(PWMFreqMeas, 0, 2);*/
+
+         /*tsl235rHiTimePrev = tsl235rHiTime;*/
+      /*}*/
+      if (tsl235rFreqPrev != tsl235rFreq) {
+         update_lcd(tsl235rFreq, 50, 2);
+
+         tsl235rFreq = tsl235rFreqPrev;
       }
 
    }
@@ -177,9 +213,20 @@ void init_welcom(void) {
    NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
 }
 
+void init_feedback_system(void) {
 
+   // Calibrating the sensor
+   PWM_SetParams(&instPWMTimer, PWM_FREQ_005KHZ, 0);
+   MB_Sleep(2000);
+   TSL235R_SetMinThreshold((void*) XPAR_TSL235R_0_S00_AXI_BASEADDR);
 
+   PWM_SetParams(&instPWMTimer, PWM_FREQ_005KHZ, 99);
+   MB_Sleep(2000);
+   TSL235R_SetMaxThreshold((void*) XPAR_TSL235R_0_S00_AXI_BASEADDR);
 
+   // Putting PWM in a know state before returning
+   PWM_SetParams(&instPWMTimer, PWM_FREQ_005KHZ, 0);
+}
 
 
 void update_lcd(int freq, int dutycycle, u32 linenum) {
@@ -205,5 +252,19 @@ void update_lcd(int freq, int dutycycle, u32 linenum) {
 
 
 void FIT_Handler(void) {
+
+   static int count = 0;
+
+   if (LEDCounter < 1023) {
+      LEDCounter = LEDCounter + 1;
+   }
+   else {
+      LEDCounter = 0;
+      /*tsl235rHiTime = *tsl235rHiTimePort;*/
+      /*tsl235rFreq = TSL235R_GetFrequency((void*) XPAR_TSL235R_0_S00_AXI_BASEADDR);*/
+      tsl235rFreq = TSL235R_GetIntensity((void*) XPAR_TSL235R_0_S00_AXI_BASEADDR);
+      NX4IO_setLEDs(count++);
+   }
    
+
 }

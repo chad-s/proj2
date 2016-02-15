@@ -43,6 +43,9 @@ module n4fpga(
    // NETS : embedded system
    ///////////////////////////////////////////////
    wire              pwm_out;       // PWM output from the axi_timer
+   wire              irradiance_in;
+   //wire  [31:0]      irradiance_val;
+   //wire  [31:0]      frequency_val;
    wire  [3:0]       debug;
 
    ///////////////////////////////////////////////
@@ -63,7 +66,7 @@ module n4fpga(
    // INTEGRATION : Feedback testbench
    ///////////////////////////////////////////////
    //assign light_int_fdback = JD[3];
-   assign JD[3] = 1'b0;
+   assign irradiance_in = JD[3];
    assign JD[2] = pwm_out;
    assign JD[1] = 1'b0;
    assign JD[0] = 1'b0;
@@ -99,6 +102,10 @@ module n4fpga(
       .pmod_enc_b_in(rotary_b),
       .pmod_enc_press_in(rotary_press),
       .pmod_enc_swt_in(rotary_sw),
+
+      .pwm_det_ref_clk_in(clk_100MHz),
+      .pwm_det_reset_in(sysreset),
+
       .pwm_out(pwm_out),
       .rgb1_b_out(RGB1_Blue),
       .rgb1_g_out(RGB1_Green),
@@ -111,9 +118,20 @@ module n4fpga(
       .sev_seg_points_out(dp),
       .sysclk(sysclk),
       .sysreset_n(sysreset_n),
+
+      .tsl235r_pulse_in(irradiance_in),
+
       .uart_out_rxd(uart_rtl_rxd),
       .uart_out_txd(uart_rtl_txd)
    );
+
+   //tsl235r IRRSENS (
+      //.clk(clk_100MHz),
+      //.reset(sysreset),
+      //.tsl235r_in(irradiance_in),
+      //.frequency(frequency_val),
+      //.irradiance(irradiance_val)
+   //);
 
 endmodule
 

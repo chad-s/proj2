@@ -1,0 +1,79 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Feb 15 02:10:05 2016
+| Host         : Sandcrawler running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_tsl235r_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_tsl235r_0_0 (user.org:proj2_ip:tsl235r:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Feb 15 01:19:32 2016
+| Host         : Sandcrawler running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_tsl235r_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_tsl235r_0_0 (user.org:proj2_ip:tsl235r:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Feb 15 01:11:50 2016
+| Host         : Sandcrawler running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_tsl235r_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_tsl235r_0_0 (user.org:proj2_ip:tsl235r:1.0) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Feb 15 00:34:19 2016
+| Host         : Sandcrawler running 64-bit Ubuntu 14.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_tsl235r_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_tsl235r_0_0 (user.org:proj2_ip:tsl235r:1.0 (Rev. 2)) to current project options.
+

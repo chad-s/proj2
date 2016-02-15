@@ -1,4 +1,4 @@
-20:17:33 **** Auto Build of project standalone_bsp_0 ****
+08:15:54 **** Auto Build of project standalone_bsp_0 ****
 make -k all 
 Running Make include in microblaze_0/libsrc/bram_v4_0/src
 make -C microblaze_0/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
@@ -16,11 +16,14 @@ Running Make include in microblaze_0/libsrc/standalone_v5_1/src
 make -C microblaze_0/libsrc/standalone_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
 Running Make include in microblaze_0/libsrc/tmrctr_v3_0/src
 make -C microblaze_0/libsrc/tmrctr_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/tsl235r_v1_0/src
+make -C microblaze_0/libsrc/tsl235r_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
 Running Make include in microblaze_0/libsrc/uartlite_v3_0/src
 make -C microblaze_0/libsrc/uartlite_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
 Running Make libs in microblaze_0/libsrc/bram_v4_0/src
 make -C microblaze_0/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
 Compiling bram
+mb-ar: creating ../../../lib/libxil.a
 Running Make libs in microblaze_0/libsrc/cpu_v2_3/src
 make -C microblaze_0/libsrc/cpu_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
 Compiling cpu
@@ -42,10 +45,13 @@ Compiling standalone
 Running Make libs in microblaze_0/libsrc/tmrctr_v3_0/src
 make -C microblaze_0/libsrc/tmrctr_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
 Compiling tmrctr
+Running Make libs in microblaze_0/libsrc/tsl235r_v1_0/src
+make -C microblaze_0/libsrc/tsl235r_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling tsl235r...
 Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src
 make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
 Compiling uartlite
 Finished building libraries
 
-20:17:44 Build Finished (took 11s.299ms)
+08:16:04 Build Finished (took 9s.198ms)
 

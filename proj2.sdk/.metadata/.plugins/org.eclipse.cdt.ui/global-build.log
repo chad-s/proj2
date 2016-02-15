@@ -1,4 +1,4 @@
-21:03:15 **** Incremental Build of configuration Debug for project proj2 ****
+08:35:20 **** Incremental Build of configuration Debug for project proj2 ****
 make all 
 Building file: /home/chad/vmshare/project/ece544/proj2/sw/proj2.c
 Invoking: MicroBlaze gcc compiler
@@ -13,9 +13,9 @@ Finished building target: proj2.elf
 Invoking: MicroBlaze Print Size
 mb-size proj2.elf  |tee "proj2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  37933	    352	   2304	  40589	   9e8d	proj2.elf
+  38577	    376	   2327	  41280	   a140	proj2.elf
 Finished building: proj2.elf.size
  
-21:03:24 **** Incremental Build of configuration Debug for project proj2 ****
+08:35:27 **** Incremental Build of configuration Debug for project proj2 ****
 make all 
 make: Nothing to be done for `all'.

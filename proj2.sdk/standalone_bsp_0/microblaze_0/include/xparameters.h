@@ -600,6 +600,17 @@
 
 /******************************************************************/
 
+/* Definitions for driver TSL235R */
+#define XPAR_TSL235R_NUM_INSTANCES 1
+
+/* Definitions for peripheral TSL235R_0 */
+#define XPAR_TSL235R_0_DEVICE_ID 0
+#define XPAR_TSL235R_0_S00_AXI_BASEADDR 0x44A20000
+#define XPAR_TSL235R_0_S00_AXI_HIGHADDR 0x44A2FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver UARTLITE */
 #define XPAR_XUARTLITE_NUM_INSTANCES 1
 

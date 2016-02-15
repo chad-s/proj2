@@ -183,3 +183,171 @@ con
 18:42:06 INFO  : XSDB server has started successfully.
 18:42:08 INFO  : Processing command line option -hwspec /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf.
 18:42:11 INFO  : Checking for hwspec changes in the project n4fpga_hw_platform_0.
+20:21:44 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+20:21:47 INFO  : XSDB server has started successfully.
+20:21:50 INFO  : Processing command line option -hwspec /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf.
+20:21:53 INFO  : Checking for hwspec changes in the project n4fpga_hw_platform_0.
+20:21:53 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1455510052000,  Project:1454870521000
+20:21:53 INFO  : The hardware specification for project 'n4fpga_hw_platform_0' is different from /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf.
+20:21:53 INFO  : Copied contents of /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf into /n4fpga_hw_platform_0/system.hdf.
+20:22:01 ERROR :  [Hsi 55-1430] Driver Name is empty
+20:22:01 ERROR :  [Hsi 55-1430] Driver Name is empty
+20:22:12 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:22:17 INFO  : 
+20:22:18 INFO  : Updating hardware inferred compiler options for proj2.
+20:22:18 INFO  : Clearing existing target manager status.
+20:22:22 INFO  : Closing and re-opening the MSS file of ther project standalone_bsp_0
+20:22:23 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+20:22:24 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+21:02:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:02:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+21:02:12 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+21:05:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:05:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+21:05:19 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+21:13:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:13:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+21:13:25 INFO  : 'fpga -state' command is executed.
+21:13:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:13:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+21:13:56 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+21:14:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+21:14:08 INFO  : 'fpga -state' command is executed.
+21:14:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:09 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:09 INFO  : Processor reset is completed for 'microblaze_0'.
+21:14:09 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:10 INFO  : The application '/home/chad/vmshare/project/ece544/proj2/proj2.sdk/proj2/Debug/proj2.elf' is downloaded to processor 'microblaze_0'.
+21:14:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Nexys4 210274674491A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Nexys4 210274674491A"} -index 0
+dow /home/chad/vmshare/project/ece544/proj2/proj2.sdk/proj2/Debug/proj2.elf
+----------------End of Script----------------
+
+21:14:11 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:11 INFO  : 'con' command is executed.
+21:14:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Nexys4 210274674491A"} -index 0
+con
+----------------End of Script----------------
+
+21:29:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:29:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+21:29:35 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+21:31:36 INFO  : Disconnected from the channel tcfchan#1.
+21:44:58 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1455515144000,  Project:1455510052000
+21:44:58 INFO  : Project n4fpga_hw_platform_0's source hardware specification located at /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+21:45:20 INFO  : Copied contents of /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf into /n4fpga_hw_platform_0/system.hdf.
+21:45:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:45:26 INFO  : 
+21:45:27 INFO  : Updating hardware inferred compiler options for proj2.
+21:45:27 INFO  : Clearing existing target manager status.
+21:45:27 INFO  : Closing and re-opening the MSS file of ther project standalone_bsp_0
+21:45:28 INFO  : Closing and re-opening the MSS file of ther project standalone_bsp_0
+21:45:29 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:45:31 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+22:11:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:11:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+22:11:40 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+22:19:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:19:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+22:19:23 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+01:37:51 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1455529037000,  Project:1455515144000
+01:37:51 INFO  : Project n4fpga_hw_platform_0's source hardware specification located at /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+01:37:56 INFO  : Copied contents of /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf into /n4fpga_hw_platform_0/system.hdf.
+01:37:59 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:38:01 INFO  : 
+01:38:03 INFO  : Updating hardware inferred compiler options for proj2.
+01:38:03 INFO  : Clearing existing target manager status.
+01:38:03 INFO  : Closing and re-opening the MSS file of ther project standalone_bsp_0
+01:38:04 INFO  : Closing and re-opening the MSS file of ther project standalone_bsp_0
+01:38:05 INFO  : Closing and re-opening the MSS file of ther project standalone_bsp_0
+01:38:05 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:38:07 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+01:42:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:42:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+01:42:57 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+01:47:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:47:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+01:47:19 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+01:48:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:48:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+01:48:59 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+01:50:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:50:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+01:50:19 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+01:51:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:51:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+01:51:29 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+01:54:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:54:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+01:54:12 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+01:55:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:55:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+01:55:20 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+01:57:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:57:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+01:57:49 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+02:01:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:01:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+02:01:08 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+08:08:10 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+08:15:04 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+08:15:07 INFO  : XSDB server has started successfully.
+08:15:11 INFO  : Processing command line option -hwspec /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf.
+08:15:15 INFO  : Checking for hwspec changes in the project n4fpga_hw_platform_0.
+08:15:15 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1455552714000,  Project:1455529037000
+08:15:15 INFO  : The hardware specification for project 'n4fpga_hw_platform_0' is different from /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf.
+08:15:15 INFO  : Copied contents of /home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga.hdf into /n4fpga_hw_platform_0/system.hdf.
+08:15:18 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+08:15:21 INFO  : 
+08:15:29 INFO  : Updating hardware inferred compiler options for proj2.
+08:15:29 INFO  : Clearing existing target manager status.
+08:17:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:17:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+08:17:40 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+08:25:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:25:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+08:25:18 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+08:27:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:27:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+08:27:38 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+08:30:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:30:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+08:30:51 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+08:32:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:32:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+08:32:36 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+08:33:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:33:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+08:34:10 INFO  : FPGA configured successfully with bitstream "/home/chad/vmshare/project/ece544/proj2/proj2.sdk/n4fpga_hw_platform_0/download.bit"
+08:35:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:35:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274674491A" && level==0} -index 0' command is executed.
+08:35:32 INFO  : 'fpga -state' command is executed.
+08:35:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:35:33 INFO  : Context for processor 'microblaze_0' is selected.
+08:35:33 INFO  : Processor reset is completed for 'microblaze_0'.
+08:35:33 INFO  : Context for processor 'microblaze_0' is selected.
+08:35:34 INFO  : The application '/home/chad/vmshare/project/ece544/proj2/proj2.sdk/proj2/Debug/proj2.elf' is downloaded to processor 'microblaze_0'.
+08:35:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Nexys4 210274674491A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Nexys4 210274674491A"} -index 0
+dow /home/chad/vmshare/project/ece544/proj2/proj2.sdk/proj2/Debug/proj2.elf
+----------------End of Script----------------
+
+08:35:34 INFO  : Context for processor 'microblaze_0' is selected.
+08:35:34 INFO  : 'con' command is executed.
+08:35:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && jtag_cable_name =~ "Digilent Nexys4 210274674491A"} -index 0
+con
+----------------End of Script----------------
+
+12:19:33 INFO  : Disconnected from the channel tcfchan#1.
+12:19:36 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-//Date        : Sun Feb  7 08:43:11 2016
+//Date        : Mon Feb 15 02:19:55 2016
 //Host        : Sandcrawler running 64-bit Ubuntu 14.04.3 LTS
 //Command     : generate_target system_wrapper.bd
 //Design      : system_wrapper
@@ -27,6 +27,8 @@ module system_wrapper
     pmod_enc_b_in,
     pmod_enc_press_in,
     pmod_enc_swt_in,
+    pwm_det_ref_clk_in,
+    pwm_det_reset_in,
     pwm_out,
     rgb1_b_out,
     rgb1_g_out,
@@ -39,6 +41,7 @@ module system_wrapper
     sev_seg_points_out,
     sysclk,
     sysreset_n,
+    tsl235r_pulse_in,
     uart_out_rxd,
     uart_out_txd);
   output clk_100MHz_out;
@@ -58,6 +61,8 @@ module system_wrapper
   input pmod_enc_b_in;
   input pmod_enc_press_in;
   input pmod_enc_swt_in;
+  input pwm_det_ref_clk_in;
+  input pwm_det_reset_in;
   output pwm_out;
   output rgb1_b_out;
   output rgb1_g_out;
@@ -70,6 +75,7 @@ module system_wrapper
   output sev_seg_points_out;
   input sysclk;
   input sysreset_n;
+  input tsl235r_pulse_in;
   input uart_out_rxd;
   output uart_out_txd;
 
@@ -90,6 +96,8 @@ module system_wrapper
   wire pmod_enc_b_in;
   wire pmod_enc_press_in;
   wire pmod_enc_swt_in;
+  wire pwm_det_ref_clk_in;
+  wire pwm_det_reset_in;
   wire pwm_out;
   wire rgb1_b_out;
   wire rgb1_g_out;
@@ -102,6 +110,7 @@ module system_wrapper
   wire sev_seg_points_out;
   wire sysclk;
   wire sysreset_n;
+  wire tsl235r_pulse_in;
   wire uart_out_rxd;
   wire uart_out_txd;
 
@@ -123,6 +132,8 @@ module system_wrapper
         .pmod_enc_b_in(pmod_enc_b_in),
         .pmod_enc_press_in(pmod_enc_press_in),
         .pmod_enc_swt_in(pmod_enc_swt_in),
+        .pwm_det_ref_clk_in(pwm_det_ref_clk_in),
+        .pwm_det_reset_in(pwm_det_reset_in),
         .pwm_out(pwm_out),
         .rgb1_b_out(rgb1_b_out),
         .rgb1_g_out(rgb1_g_out),
@@ -135,6 +146,7 @@ module system_wrapper
         .sev_seg_points_out(sev_seg_points_out),
         .sysclk(sysclk),
         .sysreset_n(sysreset_n),
+        .tsl235r_pulse_in(tsl235r_pulse_in),
         .uart_out_rxd(uart_out_rxd),
         .uart_out_txd(uart_out_txd));
 endmodule

@@ -1,0 +1,68 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Sat Feb 13 15:43:07 2016
+| Host         : Sandcrawler running 64-bit Ubuntu 14.04.3 LTS
+| Command      : report_control_sets -verbose -file tsl235r_v1_0_control_sets_placed.rpt
+| Design       : tsl235r_v1_0
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    15 |
+| Minimum Number of register sites lost to control set restrictions |    12 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              36 |           10 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             160 |           34 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|       Clock Signal      |                  Enable Signal                 |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-------------------------+------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  ref_clk_IBUF_BUFG      |                                                |                                                 |                1 |              3 |
+|  s00_axi_aclk_IBUF_BUFG |                                                | tsl235r_v1_0_S00_AXI_inst/axi_araddr[3]_i_1_n_0 |                2 |              4 |
+|  s00_axi_aclk_IBUF_BUFG |                                                |                                                 |                2 |              5 |
+|  s00_axi_aclk_IBUF_BUFG | tsl235r_v1_0_S00_AXI_inst/slv_reg2[15]_i_1_n_0 | tsl235r_v1_0_S00_AXI_inst/axi_araddr[3]_i_1_n_0 |                2 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | tsl235r_v1_0_S00_AXI_inst/slv_reg2[23]_i_1_n_0 | tsl235r_v1_0_S00_AXI_inst/axi_araddr[3]_i_1_n_0 |                1 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | tsl235r_v1_0_S00_AXI_inst/slv_reg2[31]_i_1_n_0 | tsl235r_v1_0_S00_AXI_inst/axi_araddr[3]_i_1_n_0 |                1 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | tsl235r_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0  | tsl235r_v1_0_S00_AXI_inst/axi_araddr[3]_i_1_n_0 |                1 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | tsl235r_v1_0_S00_AXI_inst/slv_reg3[15]_i_1_n_0 | tsl235r_v1_0_S00_AXI_inst/axi_araddr[3]_i_1_n_0 |                1 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | tsl235r_v1_0_S00_AXI_inst/slv_reg3[23]_i_1_n_0 | tsl235r_v1_0_S00_AXI_inst/axi_araddr[3]_i_1_n_0 |                1 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | tsl235r_v1_0_S00_AXI_inst/slv_reg3[31]_i_1_n_0 | tsl235r_v1_0_S00_AXI_inst/axi_araddr[3]_i_1_n_0 |                1 |              8 |
+|  s00_axi_aclk_IBUF_BUFG | tsl235r_v1_0_S00_AXI_inst/slv_reg3[7]_i_1_n_0  | tsl235r_v1_0_S00_AXI_inst/axi_araddr[3]_i_1_n_0 |                1 |              8 |
+|  ref_clk_IBUF_BUFG      |                                                | PWDET/logic_timer[0]_i_1_n_0                    |                8 |             32 |
+|  ref_clk_IBUF_BUFG      | PWDET/hi_time[31]_i_1_n_0                      | reset_IBUF                                      |                7 |             32 |
+|  ref_clk_IBUF_BUFG      | PWDET/lo_time[31]_i_1_n_0                      | reset_IBUF                                      |                9 |             32 |
+|  s00_axi_aclk_IBUF_BUFG | tsl235r_v1_0_S00_AXI_inst/slv_reg_rden         | tsl235r_v1_0_S00_AXI_inst/axi_araddr[3]_i_1_n_0 |                9 |             32 |
++-------------------------+------------------------------------------------+-------------------------------------------------+------------------+----------------+
+
+

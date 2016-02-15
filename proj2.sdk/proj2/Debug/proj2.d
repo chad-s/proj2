@@ -24,7 +24,8 @@ proj2.o proj2.d: /home/chad/vmshare/project/ece544/proj2/sw/proj2.c \
  /home/chad/vmshare/project/ece544/proj2/sw/pwm_tmrctr.h \
  ../../standalone_bsp_0/microblaze_0/include/xil_types.h \
  ../../standalone_bsp_0/microblaze_0/include/xstatus.h \
- ../../standalone_bsp_0/microblaze_0/include/microblaze_sleep.h
+ ../../standalone_bsp_0/microblaze_0/include/microblaze_sleep.h \
+ ../../standalone_bsp_0/microblaze_0/include/tsl235r.h
 
 ../../standalone_bsp_0/microblaze_0/include/xparameters.h:
 
@@ -77,3 +78,5 @@ proj2.o proj2.d: /home/chad/vmshare/project/ece544/proj2/sw/proj2.c \
 ../../standalone_bsp_0/microblaze_0/include/xstatus.h:
 
 ../../standalone_bsp_0/microblaze_0/include/microblaze_sleep.h:
+
+../../standalone_bsp_0/microblaze_0/include/tsl235r.h:

@@ -27,6 +27,8 @@
 		<item value="true" key="WizardFileSystemResourceImportPage1.STORE_CREATE_LINKS_IN_WORKSPACE_ID"/>
 		<item value="true" key="WizardFileSystemResourceImportPage1.STORE_PATH_VARIABLE_SELECTED_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/chad/vmshare/project/ece544/ip_repo/tsl235r_1.0/drivers/tsl235r_v1_0/src"/>
+			<item value="/home/chad/vmshare/project/ece544/ip_repo/tsl235r_1.0/drivers/tsl235r_v1_0"/>
 			<item value="/home/chad/vmshare/project/ece544/proj2/sw"/>
 		</list>
 	</section>

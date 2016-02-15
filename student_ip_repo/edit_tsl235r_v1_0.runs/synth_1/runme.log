@@ -1,0 +1,274 @@
+
+*** Running vivado
+    with args -log tsl235r_v1_0.vds -m64 -mode batch -messageDb vivado.pb -notrace -source tsl235r_v1_0.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source tsl235r_v1_0.tcl -notrace
+Command: synth_design -top tsl235r_v1_0 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 926.844 ; gain = 138.520 ; free physical = 780 ; free virtual = 2383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tsl235r_v1_0' [/home/chad/vmshare/project/ece544/ip_repo/tsl235r_1.0/hdl/tsl235r_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'tsl235r_v1_0_S00_AXI' [/home/chad/vmshare/project/ece544/ip_repo/tsl235r_1.0/hdl/tsl235r_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/chad/vmshare/project/ece544/ip_repo/tsl235r_1.0/hdl/tsl235r_v1_0_S00_AXI.v:224]
+INFO: [Synth 8-226] default block is never used [/home/chad/vmshare/project/ece544/ip_repo/tsl235r_1.0/hdl/tsl235r_v1_0_S00_AXI.v:365]
+INFO: [Synth 8-256] done synthesizing module 'tsl235r_v1_0_S00_AXI' (1#1) [/home/chad/vmshare/project/ece544/ip_repo/tsl235r_1.0/hdl/tsl235r_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'pulse_width_det' [/home/chad/vmshare/project/ece544/ip_repo/tsl235r_1.0/hdl/pulse_width_det.v:22]
+INFO: [Synth 8-256] done synthesizing module 'pulse_width_det' (2#1) [/home/chad/vmshare/project/ece544/ip_repo/tsl235r_1.0/hdl/pulse_width_det.v:22]
+INFO: [Synth 8-256] done synthesizing module 'tsl235r_v1_0' (3#1) [/home/chad/vmshare/project/ece544/ip_repo/tsl235r_1.0/hdl/tsl235r_v1_0.v:4]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 963.133 ; gain = 174.809 ; free physical = 743 ; free virtual = 2346
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 963.133 ; gain = 174.809 ; free physical = 743 ; free virtual = 2346
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 971.133 ; gain = 182.809 ; free physical = 743 ; free virtual = 2346
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 979.141 ; gain = 190.816 ; free physical = 734 ; free virtual = 2338
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tsl235r_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+Module pulse_width_det 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1077.145 ; gain = 288.820 ; free physical = 638 ; free virtual = 2242
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design tsl235r_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design tsl235r_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design tsl235r_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design tsl235r_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design tsl235r_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design tsl235r_v1_0 has unconnected port s00_axi_arprot[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1085.152 ; gain = 296.828 ; free physical = 630 ; free virtual = 2234
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1085.152 ; gain = 296.828 ; free physical = 630 ; free virtual = 2234
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tsl235r_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tsl235r_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (\tsl235r_v1_0_S00_AXI_inst/axi_bresp_reg[1] ) is unused and will be removed from module tsl235r_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\tsl235r_v1_0_S00_AXI_inst/axi_bresp_reg[0] ) is unused and will be removed from module tsl235r_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\tsl235r_v1_0_S00_AXI_inst/axi_araddr_reg[1] ) is unused and will be removed from module tsl235r_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\tsl235r_v1_0_S00_AXI_inst/axi_araddr_reg[0] ) is unused and will be removed from module tsl235r_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\tsl235r_v1_0_S00_AXI_inst/axi_awaddr_reg[1] ) is unused and will be removed from module tsl235r_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\tsl235r_v1_0_S00_AXI_inst/axi_awaddr_reg[0] ) is unused and will be removed from module tsl235r_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\tsl235r_v1_0_S00_AXI_inst/axi_rresp_reg[1] ) is unused and will be removed from module tsl235r_v1_0.
+WARNING: [Synth 8-3332] Sequential element (\tsl235r_v1_0_S00_AXI_inst/axi_rresp_reg[0] ) is unused and will be removed from module tsl235r_v1_0.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    33|
+|4     |LUT2   |     1|
+|5     |LUT3   |     5|
+|6     |LUT4   |    16|
+|7     |LUT5   |     3|
+|8     |LUT6   |    32|
+|9     |FDRE   |   204|
+|10    |IBUF   |    50|
+|11    |OBUF   |    41|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------+---------------------+------+
+|      |Instance                    |Module               |Cells |
++------+----------------------------+---------------------+------+
+|1     |top                         |                     |   395|
+|2     |  PWDET                     |pulse_width_det      |   145|
+|3     |  tsl235r_v1_0_S00_AXI_inst |tsl235r_v1_0_S00_AXI |   157|
++------+----------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1101.176 ; gain = 196.332 ; free physical = 611 ; free virtual = 2215
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1101.176 ; gain = 312.852 ; free physical = 611 ; free virtual = 2215
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1163.168 ; gain = 266.324 ; free physical = 549 ; free virtual = 2153
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1163.172 ; gain = 0.000 ; free physical = 548 ; free virtual = 2152
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 13 15:40:21 2016...
